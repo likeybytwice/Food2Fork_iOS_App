@@ -7,12 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		348363962F0F6F48358657C9 /* Pods_Food2Fork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E012279C72CFDA78D6D6968 /* Pods_Food2Fork.framework */; };
+		E92FEFB121E5194000133BF3 /* RecipeManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E92FEFB021E5194000133BF3 /* RecipeManager.swift */; };
+		E92FEFB421E519AB00133BF3 /* downloaded.swift in Sources */ = {isa = PBXBuildFile; fileRef = E92FEFB321E519AB00133BF3 /* downloaded.swift */; };
 		E9474CBA21DE552D0081F007 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9474CB921DE552D0081F007 /* AppDelegate.swift */; };
-		E9474CBC21DE552D0081F007 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9474CBB21DE552D0081F007 /* ViewController.swift */; };
+		E9474CBC21DE552D0081F007 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9474CBB21DE552D0081F007 /* MainViewController.swift */; };
 		E9474CBF21DE552D0081F007 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E9474CBD21DE552D0081F007 /* Main.storyboard */; };
 		E9474CC121DE552E0081F007 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E9474CC021DE552E0081F007 /* Assets.xcassets */; };
 		E9474CC421DE552E0081F007 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E9474CC221DE552E0081F007 /* LaunchScreen.storyboard */; };
 		E9474CCF21DE552E0081F007 /* Food2ForkTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9474CCE21DE552E0081F007 /* Food2ForkTests.swift */; };
+		E9474CDE21DE56220081F007 /* Food2ForkAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9474CDD21DE56220081F007 /* Food2ForkAPI.swift */; };
+		E9474CE121DE57480081F007 /* Recipe.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9474CE021DE57480081F007 /* Recipe.swift */; };
+		E98926FB21E12BF800E23A0A /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E98926FA21E12BF800E23A0A /* NetworkManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -26,9 +32,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0BFABDDA10CF55B0B50E3497 /* Pods-Food2Fork.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Food2Fork.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Food2Fork/Pods-Food2Fork.debug.xcconfig"; sourceTree = "<group>"; };
+		3E012279C72CFDA78D6D6968 /* Pods_Food2Fork.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Food2Fork.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E92FEFB021E5194000133BF3 /* RecipeManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeManager.swift; sourceTree = "<group>"; };
+		E92FEFB321E519AB00133BF3 /* downloaded.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = downloaded.swift; sourceTree = "<group>"; };
 		E9474CB621DE552D0081F007 /* Food2Fork.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Food2Fork.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E9474CB921DE552D0081F007 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		E9474CBB21DE552D0081F007 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		E9474CBB21DE552D0081F007 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		E9474CBE21DE552D0081F007 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E9474CC021DE552E0081F007 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E9474CC321DE552E0081F007 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -36,6 +46,10 @@
 		E9474CCA21DE552E0081F007 /* Food2ForkTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Food2ForkTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E9474CCE21DE552E0081F007 /* Food2ForkTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Food2ForkTests.swift; sourceTree = "<group>"; };
 		E9474CD021DE552E0081F007 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E9474CDD21DE56220081F007 /* Food2ForkAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Food2ForkAPI.swift; sourceTree = "<group>"; };
+		E9474CE021DE57480081F007 /* Recipe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Recipe.swift; sourceTree = "<group>"; };
+		E970469B80838778428DAFAC /* Pods-Food2Fork.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Food2Fork.release.xcconfig"; path = "Pods/Target Support Files/Pods-Food2Fork/Pods-Food2Fork.release.xcconfig"; sourceTree = "<group>"; };
+		E98926FA21E12BF800E23A0A /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +57,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				348363962F0F6F48358657C9 /* Pods_Food2Fork.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -56,12 +71,39 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C900DC993CFB2F6A37E5782D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0BFABDDA10CF55B0B50E3497 /* Pods-Food2Fork.debug.xcconfig */,
+				E970469B80838778428DAFAC /* Pods-Food2Fork.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		D55681916E2AA50D95272334 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3E012279C72CFDA78D6D6968 /* Pods_Food2Fork.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E92FEFB221E5198B00133BF3 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				E92FEFB321E519AB00133BF3 /* downloaded.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		E9474CAD21DE552D0081F007 = {
 			isa = PBXGroup;
 			children = (
 				E9474CB821DE552D0081F007 /* Food2Fork */,
 				E9474CCD21DE552E0081F007 /* Food2ForkTests */,
 				E9474CB721DE552D0081F007 /* Products */,
+				C900DC993CFB2F6A37E5782D /* Pods */,
+				D55681916E2AA50D95272334 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -77,11 +119,14 @@
 		E9474CB821DE552D0081F007 /* Food2Fork */ = {
 			isa = PBXGroup;
 			children = (
+				E92FEFB221E5198B00133BF3 /* Extensions */,
+				E9474CDF21DE573C0081F007 /* Recipe */,
+				E9474CDC21DE55BE0081F007 /* Network */,
+				E9474CDB21DE55B70081F007 /* Managers */,
+				E9474CDA21DE55A50081F007 /* Storyboards */,
+				E9474CD921DE55960081F007 /* ViewControllers */,
 				E9474CB921DE552D0081F007 /* AppDelegate.swift */,
-				E9474CBB21DE552D0081F007 /* ViewController.swift */,
-				E9474CBD21DE552D0081F007 /* Main.storyboard */,
 				E9474CC021DE552E0081F007 /* Assets.xcassets */,
-				E9474CC221DE552E0081F007 /* LaunchScreen.storyboard */,
 				E9474CC521DE552E0081F007 /* Info.plist */,
 			);
 			path = Food2Fork;
@@ -96,6 +141,48 @@
 			path = Food2ForkTests;
 			sourceTree = "<group>";
 		};
+		E9474CD921DE55960081F007 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				E9474CBB21DE552D0081F007 /* MainViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		E9474CDA21DE55A50081F007 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				E9474CBD21DE552D0081F007 /* Main.storyboard */,
+				E9474CC221DE552E0081F007 /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		E9474CDB21DE55B70081F007 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				E98926FA21E12BF800E23A0A /* NetworkManager.swift */,
+				E92FEFB021E5194000133BF3 /* RecipeManager.swift */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		E9474CDC21DE55BE0081F007 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				E9474CDD21DE56220081F007 /* Food2ForkAPI.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		E9474CDF21DE573C0081F007 /* Recipe */ = {
+			isa = PBXGroup;
+			children = (
+				E9474CE021DE57480081F007 /* Recipe.swift */,
+			);
+			path = Recipe;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -103,9 +190,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E9474CD321DE552E0081F007 /* Build configuration list for PBXNativeTarget "Food2Fork" */;
 			buildPhases = (
+				B613F90E19E7CBFD8B8DE62A /* [CP] Check Pods Manifest.lock */,
 				E9474CB221DE552D0081F007 /* Sources */,
 				E9474CB321DE552D0081F007 /* Frameworks */,
 				E9474CB421DE552D0081F007 /* Resources */,
+				B32BBCE31B7AC47C07B7B67B /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -192,13 +281,69 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		B32BBCE31B7AC47C07B7B67B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Food2Fork/Pods-Food2Fork-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/Moya/Moya.framework",
+				"${BUILT_PRODUCTS_DIR}/Result/Result.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Moya.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Result.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Food2Fork/Pods-Food2Fork-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B613F90E19E7CBFD8B8DE62A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Food2Fork-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		E9474CB221DE552D0081F007 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E9474CBC21DE552D0081F007 /* ViewController.swift in Sources */,
+				E92FEFB421E519AB00133BF3 /* downloaded.swift in Sources */,
+				E9474CBC21DE552D0081F007 /* MainViewController.swift in Sources */,
+				E9474CDE21DE56220081F007 /* Food2ForkAPI.swift in Sources */,
+				E98926FB21E12BF800E23A0A /* NetworkManager.swift in Sources */,
+				E92FEFB121E5194000133BF3 /* RecipeManager.swift in Sources */,
 				E9474CBA21DE552D0081F007 /* AppDelegate.swift in Sources */,
+				E9474CE121DE57480081F007 /* Recipe.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -358,6 +503,7 @@
 		};
 		E9474CD421DE552E0081F007 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0BFABDDA10CF55B0B50E3497 /* Pods-Food2Fork.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -376,6 +522,7 @@
 		};
 		E9474CD521DE552E0081F007 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E970469B80838778428DAFAC /* Pods-Food2Fork.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;

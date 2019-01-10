@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Main View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="MainViewController" customModule="Food2Fork" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="6br-w1-Q5l">
+                                <rect key="frame" x="24" y="60" width="327" height="121"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Recipe name" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fQ4-Iw-XDG">
+                                <rect key="frame" x="24" y="211" width="327" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <gestureRecognizers/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="fQ4-Iw-XDG" secondAttribute="bottom" constant="435" id="1Y7-2U-Ch4"/>
+                            <constraint firstItem="6br-w1-Q5l" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="40" id="6qY-zu-CR2"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="fQ4-Iw-XDG" secondAttribute="trailing" constant="24" id="D0z-Lc-pps"/>
+                            <constraint firstItem="fQ4-Iw-XDG" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="EKL-cI-yKH"/>
+                            <constraint firstItem="fQ4-Iw-XDG" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="24" id="OWE-7p-wbI"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="6br-w1-Q5l" secondAttribute="trailing" constant="24" id="QwJ-Cv-Y5K"/>
+                            <constraint firstItem="fQ4-Iw-XDG" firstAttribute="top" secondItem="6br-w1-Q5l" secondAttribute="bottom" constant="30" id="Yl0-8x-dFX"/>
+                            <constraint firstItem="6br-w1-Q5l" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="24" id="e8e-5Y-xeg"/>
+                            <constraint firstItem="6br-w1-Q5l" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="f7q-M3-83F"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="UQl-WR-FVV" appends="YES" id="J2X-CL-o1S"/>
+                            <outletCollection property="gestureRecognizers" destination="p37-KV-cAL" appends="YES" id="QKG-1c-Eys"/>
+                        </connections>
+                    </view>
+                    <connections>
+                        <outlet property="recipeImage" destination="6br-w1-Q5l" id="tCv-5r-olr"/>
+                        <outlet property="recipeNameLabel" destination="fQ4-Iw-XDG" id="dgg-yk-sa1"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <swipeGestureRecognizer direction="right" id="UQl-WR-FVV">
+                    <connections>
+                        <action selector="rightSwipe:" destination="BYZ-38-t0r" id="33h-p8-xb2"/>
+                    </connections>
+                </swipeGestureRecognizer>
+                <swipeGestureRecognizer direction="left" id="p37-KV-cAL">
+                    <connections>
+                        <action selector="leftSwipe:" destination="BYZ-38-t0r" id="y9z-Ap-KIP"/>
+                    </connections>
+                </swipeGestureRecognizer>
+            </objects>
+        </scene>
+    </scenes>
+</document>
